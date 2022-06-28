@@ -1,0 +1,29 @@
+.subscribe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 53px 30px 66px 30px;
+	background: var(--form-bg);
+	&__title {
+		font-weight: 500;	
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.03em;
+		margin-bottom: 31px;
+	}
+	&__form {
+		display: block;
+		margin: auto;
+		width: 100%;
+		max-width: 610px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__email {
+		background: var(--white);
+		padding: 18px;
+		width: 100%;
+		color: var(--placeholder-color);
+	}
+}

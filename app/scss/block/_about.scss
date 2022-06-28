@@ -1,0 +1,21 @@
+.about {
+	padding: 85px 185px;
+	text-align: center;
+	background-image: url('../img/caress-gray.svg');
+	background-repeat: no-repeat;
+	background-position: center 85px;
+	&__title {
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 37px;
+		letter-spacing: 0.04em;
+		margin-bottom: 28px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: 0.01em;
+		margin-bottom: 44px;
+	}
+}

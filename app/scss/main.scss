@@ -1,0 +1,37 @@
+@import 'block/null';
+@import 'block/font';
+@import 'block/variables';
+@import 'block/header';
+@import 'block/swiper-vars';
+@import 'block/swiper';
+@import 'block/hero';
+@import 'block/btn';
+@import 'block/banner-novelty';
+@import 'block/novelty-video';
+@import 'block/banner-brand';
+@import 'block/banner-elegant';
+@import 'block/banner-discount';
+@import 'block/discount';
+@import 'block/gender';
+@import 'block/about';
+@import 'block/sneakers';
+@import 'block/caressshop';
+@import 'block/subscribe';
+@import 'block/footer';
+
+
+
+
+body {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	color: var(--main-color);
+}
+
+.container {
+	max-width: 1210px;
+	padding: 0 15px;
+	margin: auto;
+	height: inherit;
+}
+

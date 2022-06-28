@@ -1,0 +1,17 @@
+.gender {
+	height: 100vh;
+	background-image: url('../img/gender.png');
+	background-size: cover;
+	&__content {
+		position: relative;
+		height: 100%;
+	}
+	&__buttons {
+		position: absolute;
+		bottom: 25px;
+	}
+	&__btn-men {
+		margin: 0 359px 0 245px;
+	}
+}
+

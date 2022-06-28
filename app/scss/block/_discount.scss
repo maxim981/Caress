@@ -1,0 +1,62 @@
+.discount {
+	background-image: url('../img/caress-white.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	width: 100%;
+	margin-bottom: 40px;
+	&__list {
+		position: relative;
+		display: grid;
+		grid-template-rows: 280px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__item:nth-child(1)::after {
+		position: absolute;
+		background: var(--discount-bg-1);
+		content: '';
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+	}
+	&__item:nth-child(2)::after {
+		position: absolute;
+		background: var(--discount-bg-2);
+		content: '';
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+	}
+	&__item:nth-child(3)::after {
+		position: absolute;
+		background: var(--discount-bg-3);
+		content: '';
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 55px;
+		line-height: 65px;
+		letter-spacing: 0.06em;
+		margin-bottom: 10px;
+	}
+	&__subtitle {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+		margin-bottom: 10px;
+	}
+	&__code {
+		font-family: 'MontserratItalic';
+	}
+}

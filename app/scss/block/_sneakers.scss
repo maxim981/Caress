@@ -1,0 +1,92 @@
+.sneakers {
+	height: 800px;
+	&__content {
+		height: 100%;
+		display: grid;
+		// grid-template-columns: minmax(auto, 400px) minmax(200px, 600px) minmax(auto, 400px);
+		grid-template-columns: 1fr 1.5fr 1fr;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		overflow: hidden;
+	}
+	&__item-large {
+		grid-row: span 2;
+	}
+	&__item-large &__info {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item-large &__price {
+		margin-bottom: 33px;
+	}
+	&__large-top {
+		width: 100%;
+		padding: 60px;
+		text-align: right;
+	}
+	&__large-bottom {
+		width: 100%;
+		padding: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__large-release {
+		display: inline-block;
+		position: relative;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+	}
+	&__large-release::before {
+		position: absolute;
+		top: 50%;
+		left: -50px;
+		transform: translateY(-50%);
+		content: '';
+		width: 40px;
+		height: 1px;
+		background: var(--main-color);		
+	}
+	&__large-title {
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 46px;
+		letter-spacing: 0.04em; 
+	}
+	&__item:not(&__item-large) {
+		padding: 0 0 35px 80px;
+		justify-content: flex-end;
+	}
+	&__img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		z-index: -1;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.02em;
+		margin-bottom: 7px;
+	}
+	&__price {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+	}
+}
